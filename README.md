@@ -3,7 +3,8 @@ Access Details:
 IP = 54.79.116.131
 URL = http://54.79.116.131/catalogue/
 
-# Installed software summary:
+# Software summary:
+   - Ubuntu 18.04 LTS on AWS LightSail
    - Apache HTTP server 
    - PostgreSQL Database
    - Python Packages for Flask Application
