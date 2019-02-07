@@ -1,8 +1,8 @@
 # LinuxServerConfig
-Project Overview
+### Project Overview
 This a documentation for a baseline installation of a Linux server and prepare it to host the web applications. This will secure configured server from a number of attack vectors, install and configure a database server, and deploy existing applications
 
-Why this Project?
+### Why this Project?
 A deep understanding of exactly what the web applications are doing, how they are hosted, and the interactions between multiple systems are what define one as a Full Stack Web Developer. This demonstrate how to turn a brand-new, bare bones, Linux server into the secure and efficient web application host the existing applications need.
 
 
@@ -11,29 +11,29 @@ IP = 54.79.116.131
 URL = http://54.79.116.131/catalogue/
 
 ## Software summary:
-   - Ubuntu 18.04 LTS on AWS LightSail
-   - Apache HTTP server 
-   - PostgreSQL Database
-   - Python Packages for Flask Application
-   - Git
+   - Ubuntu 18.04 LTS on AWS LightSail\
+   - Apache HTTP server \
+   - PostgreSQL Database\
+   - Python Packages for Flask Application\
+   - Git\
 
 ## Configuration:
-  - SSH mapped to port 2200 and installed access keys
-  - UFW firewall rules configuration
-  - Add and configured users for database and sudo access
-  - Postgresql installation and setup:
+  - SSH mapped to port 2200 and installed access keys\
+  - UFW firewall rules configuration\
+  - Add and configured users for database and sudo access\
+  - Postgresql installation and setup:\
       
-      * To install use: 
-         sudo apt-get install postgresql postgresql-contrib
+      * To install use: \
+         sudo apt-get install postgresql postgresql-contrib\
          
       * Setup accounts and prepare catalogue database:
-         sudo adduser catalogue
-         sudo -u postgres createuser catalogue
-         psql> create database catalogue with owner catalogue;
-         psql> alter role catalogue PASSWORD='menu';
-         cd /var/www/html/catalogue
-         python db_set_schema.py
-         python db_insert_values.py
+         sudo adduser catalogue\
+         sudo -u postgres createuser catalogue\
+         psql> create database catalogue with owner catalogue;\
+         psql> alter role catalogue PASSWORD='menu';\
+         cd /var/www/html/catalogue\
+         python db_set_schema.py\
+         python db_insert_values.py\
  **[Back to top](#LinuxServerConfig)**
   
 ## References:
