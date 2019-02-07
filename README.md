@@ -21,8 +21,7 @@ URL = http://54.79.116.131/catalogue/
   - SSH mapped to port 2200 and installed access keys
   - UFW firewall rules configuration
   - Add and configured users for database and sudo access
-  - Postgresql installation and setup:
-      
+  - Postgresql installation and setup
       * To install use: 
          sudo apt-get install postgresql postgresql-contrib
          
@@ -34,6 +33,16 @@ URL = http://54.79.116.131/catalogue/
          cd /var/www/html/catalogue\
          python db_set_schema.py\
          python db_insert_values.py\
+    - Apache HTTP Web server installaiton and setup for WSGI App:
+      * To install use: 
+         sudo apt-get install apache2
+      * Add WSGI modue (Python 3):
+         sudo apt-get install libapache2-mod-wsgi-py3
+      * Vitual Host configuration
+         /etc/apache2/sites-enabled/000-default.conf
+      * Create WSGI file for the project
+        /var/www/html/<AppNmae>/
+    
  **[Back to top](#LinuxServerConfig)**
   
 ## References:
