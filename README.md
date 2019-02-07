@@ -32,16 +32,16 @@ URL = http://54.79.116.131/catalogue/
          psql> alter role catalogue PASSWORD='menu';\
          cd /var/www/html/catalogue\
          python db_set_schema.py\
-         python db_insert_values.py\
+         python db_insert_values.py
     - Apache HTTP Web server installaiton and setup for WSGI App:
       * To install use: \
-         sudo apt-get install apache2\
+         sudo apt-get install apache2
       * Add WSGI modue (Python 3):\
-         sudo apt-get install libapache2-mod-wsgi-py3\
+         sudo apt-get install libapache2-mod-wsgi-py3
       * Vitual Host configuration\
-         /etc/apache2/sites-enabled/000-default.conf\
+         /etc/apache2/sites-enabled/000-default.conf
       * Create WSGI file for the project\
-        /var/www/html/AppName/\
+        /var/www/html/AppName/
     
  **[Back to top](#LinuxServerConfig)**
   
