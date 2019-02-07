@@ -24,7 +24,7 @@ URL = http://54.79.116.131/catalogue/
   - Postgresql installation and setup:
       
       * To install use: 
-         sudo apt-get install postgresql postgresql-contrib\
+         sudo apt-get install postgresql postgresql-contrib
          
       * Setup accounts and prepare catalogue database:\
          sudo adduser catalogue\
