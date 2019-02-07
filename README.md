@@ -11,22 +11,22 @@ IP = 54.79.116.131
 URL = http://54.79.116.131/catalogue/
 
 ## Software summary:
-   - Ubuntu 18.04 LTS on AWS LightSail\
-   - Apache HTTP server \
-   - PostgreSQL Database\
-   - Python Packages for Flask Application\
-   - Git\
+   - Ubuntu 18.04 LTS on AWS LightSail
+   - Apache HTTP server 
+   - PostgreSQL Database
+   - Python Packages for Flask Application
+   - Git
 
 ## Configuration:
-  - SSH mapped to port 2200 and installed access keys\
-  - UFW firewall rules configuration\
-  - Add and configured users for database and sudo access\
-  - Postgresql installation and setup:\
+  - SSH mapped to port 2200 and installed access keys
+  - UFW firewall rules configuration
+  - Add and configured users for database and sudo access
+  - Postgresql installation and setup:
       
-      * To install use: \
+      * To install use: 
          sudo apt-get install postgresql postgresql-contrib\
          
-      * Setup accounts and prepare catalogue database:
+      * Setup accounts and prepare catalogue database:\
          sudo adduser catalogue\
          sudo -u postgres createuser catalogue\
          psql> create database catalogue with owner catalogue;\
